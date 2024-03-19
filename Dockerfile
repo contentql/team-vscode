@@ -32,8 +32,7 @@ RUN curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | b
 # RUN export NVM_DIR="$HOME/.nvm"
 RUN [ -s "/home/coder/.nvm/nvm.sh" ] && \. "/home/coder/.nvm/nvm.sh"
 RUN [ -s "/home/coder/.nvm/bash_completion" ] && \. "/home/coder/.nvm/bash_completion"
-RUN nvm install 20
-RUN nvm use 20
+
 # Copy files: 
 # COPY deploy-container/myTool /home/coder/myTool
 
