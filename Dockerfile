@@ -29,9 +29,9 @@ RUN sudo chown -R coder:coder /home/coder/.local
 # Install apt packages:
 # RUN sudo apt-get install -y ubuntu-make
 RUN curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
-RUN export NVM_DIR="$HOME/.nvm"
-RUN [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
-RUN [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
+# RUN export NVM_DIR="$HOME/.nvm"
+RUN [ -s "/home/coder/.nvm/nvm.sh" ] && \. "/home/coder/.nvm/nvm.sh"
+RUN [ -s "/home/coder/.nvm/bash_completion" ] && \. "/home/coder/.nvm/bash_completion"
 # Copy files: 
 # COPY deploy-container/myTool /home/coder/myTool
 
